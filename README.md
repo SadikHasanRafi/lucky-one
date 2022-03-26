@@ -1,12 +1,13 @@
 # Sun-Tech
 
+## Repo Link: https://github.com/Programming-Hero-Web-Course4/lucky-one-SadikHasanRafi
 
+## Live Link: https://leafy-klepon-666631.netlify.app
 
 
 <br><br><br>
 ## Getting Started with Create React App
 
-This project was bootstrapped with [Sun-Tech](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
