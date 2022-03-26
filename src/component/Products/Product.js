@@ -4,9 +4,11 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const product = (props) => {
+    //Destructuring the props
     const {handleAddToCart, product} = props;
     const {img, name, price, brand} = product;
     return (
+        //Cards
         <div className='card'>
             <img className='card-img' src={img} alt={name}/>
             <div className="info">
