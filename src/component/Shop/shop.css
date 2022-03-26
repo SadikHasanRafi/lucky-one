@@ -2,3 +2,12 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 70px;
+}
+.cart-container{
+    background-color: antiquewhite;
+}
