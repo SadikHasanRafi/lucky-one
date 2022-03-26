@@ -1,35 +1,30 @@
-import React from 'react';
-import './shop.css'
-import { useEffect, useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import "./Shop.css"
+import Product from '../Products/Product';
 
 const Shop = () => {
- 
-       //fetching data from json
-   const [products, setproducts] = useState([]);
+    const [products, setProducts] = useState([])
 
-   useEffect(()=>{
-     fetch('fakeDB.json')
-     .then(res=>res.json())
-     .then(products=> setproducts(products))
- 
-   },[])
-
-
+    useEffect( () =>{
+        fetch("fakeDB.json")
+        .then(res => res.json())
+        .then(data => setProducts(data))
+    }, [])
 
     return (
         <div className='shop-container'>
-            <div className='card-container'>
-                
-                
+            <div className="products-container">
+                {
+                    products.map(product => <Product 
+                        key={product.id}
+                        product={product}
+                    ></Product>)
+                }
             </div>
-
-            <div className='cart-container'>
-                <h1>This is cart part</h1>
+            <div className="cart-container">
+                <h4>order summary</h4>
             </div>
-
         </div>
-
     );
 };
 
