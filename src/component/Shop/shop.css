@@ -6,8 +6,30 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px 70px;
+    margin: 20px 70px;
 }
 .cart-container{
-    background-color: antiquewhite;
+    background-color: rgba(46, 92, 241, 0.096);
+    padding: 30px 20px;
+}
+@media screen and (max-width:832px) {
+    .products-container{
+        margin: 20px 0px;
+    }
+}
+@media screen and (max-width: 654px) {
+  .shop-container{
+      grid-template-columns: 1fr;
+  }
+  .cart-container{
+      position: fixed;
+      width: 100%;
+      background-color: rgba(46, 92, 241, 0.918);
+      bottom: 0px;
+      color: white;
+      backdrop-filter: blur(50%);
+  }  
+  .products-container{
+      margin: 0px 0px 100px 0px;
+  }
 }
