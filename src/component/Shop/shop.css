@@ -1,0 +1,11 @@
+.card-container{
+    background-color:red ;
+}
+.cart-container{
+    background-color: gray;
+}
+
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}

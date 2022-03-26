@@ -1,11 +1,26 @@
-import React from 'react';
+import './App.css';
 
-const App = () => {
+import Header from  "./header/header"
+import Shop from './component/Shop/Shop';
+
+function App() {
+
+
+
+ 
+ 
+
+  //  //object destracturing
+  //  const [id,name,price,brand,img]=products
+
   return (
-    <div>
-      
+    <div className="App">
+      <Header></Header>
+      <Shop></Shop>
+      }
+     
     </div>
   );
-};
+}
 
 export default App;
