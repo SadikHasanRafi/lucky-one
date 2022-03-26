@@ -17,6 +17,11 @@ const Shop = () => {
         setCart(newCart)
         // let counter = 0;
     }
+    const [resetCart, setResetCart] = useState(cart)
+    const resetCartHandle = () => {
+        setResetCart([]);
+        setCart(resetCart)
+    }
     return (
         <div className='shop-container'>
             <div className="products-container">
@@ -32,9 +37,10 @@ const Shop = () => {
                 <h1>Order Summary</h1>
                 
                <div>
-                   {/* {console.log(typeof(cart.cartProduct))} */}
                    <CartProduct cartProduct={cart}></CartProduct>
                </div>
+               <button>Choose one for me</button><br/>
+               <button onClick={resetCartHandle}>Choose again</button>
             </div>
         </div>
     );
