@@ -1,14 +1,21 @@
 import React from 'react';
 
 const CartProduct = (props) => {
-    //let {cartProduct}=props
-    console.log(props.cartProduct)
+    
+    const { cartProduct } = props;
 
     return (
-        <div>
-            <p>this is from cart products {props.name}</p>
-            
-        </div>
+            <div>
+                {
+                    cartProduct.map(addedProduct => 
+                        <p style={{background: "white"}}>
+                            {
+                                (addedProduct.name)
+                            }
+                        </p>
+                    )
+                }
+            </div>
     );
 };
 
